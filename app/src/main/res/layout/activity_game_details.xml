@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView  android:background="@drawable/background_drawable" android:layout_height="match_parent" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".ui.gameDetails.GameDetailsActivity">
+
+        <LinearLayout
+            android:background="@drawable/border"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Game Name "
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <View
+                android:background="@color/white"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/gameName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Pub Battle Field "
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/border"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Description"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <View
+                android:background="@color/white"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/gameDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Pub Battle Field "
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/border"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Game Price Amount :"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <View
+                android:background="@color/white"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/gamePrize"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Pub Battle Field "
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/border"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Game Type"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <View
+                android:background="@color/white"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/gameType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Pub Battle Field"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/border"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Group Type "
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <View
+                android:background="@color/white"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/groupType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Pub Battle Field "
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/border"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Creator "
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <View
+                android:background="@color/white"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/gameCreator"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Pub Battle Field "
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/border"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Number of Player"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <View
+                android:background="@color/white"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/gameNumberOfPlayer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text=" 30 "
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/border"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Remaining Count"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <View
+                android:background="@color/white"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/gameNumberOfPlayerRemain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text=" 30 "
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/black_transparent"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:id="@+id/llPlayerList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:background="@drawable/border"
+                android:layout_margin="8dp"
+                android:id="@+id/recyclerViewPlayerList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/joinLayout"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:background="@color/white"
+                android:text="Join Game"
+                android:textColor="@color/black"
+                android:id="@+id/joinGame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

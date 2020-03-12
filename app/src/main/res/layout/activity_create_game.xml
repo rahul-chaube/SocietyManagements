@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_drawable"
+    tools:context=".ui.creategame.CreateGameActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/mainBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutGameTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditText.Colored">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextGameTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/game_title"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutGameNoOFPlayer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditText.Colored">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextGameNoOFPlayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_nor_player"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutGameDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditText.Colored">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextGameDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:gravity="start"
+                    android:hint="@string/enter_description"
+                    android:lines="6"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutGamePrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditText.Colored">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextGamePrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/price"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10sp"
+                    android:text="@string/select_game"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/gameType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/pubg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:text="@string/pubg"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/counterStrike"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:padding="10sp"
+                        android:text="@string/counter_strike"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:theme="@style/RadioButtonStyle" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="@string/select_game_type"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/groupType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    app:layout_constraintBottom_toBottomOf="@id/mainBox"
+
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radioPrivate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center"
+                        android:text="Private"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/radioPublic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="Public"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+                <EditText
+                    android:focusable="false"
+                    android:textColorHint="@color/white"
+                    android:id="@+id/editTextGameStartDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:drawableEnd="@drawable/ic_date_range_white_24dp"
+                    android:hint="@string/game_start_date"
+                    android:textColor="@color/white" />
+
+
+                <EditText
+                    android:focusable="false"
+                    android:textColorHint="@color/white"
+                    android:id="@+id/editTextGameEndDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:drawableEnd="@drawable/ic_date_range_white_24dp"
+                    android:hint="@string/game_end_date"
+                    android:textColor="@color/white" />
+
+
+
+            <LinearLayout
+                android:id="@+id/gameCredentials"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/groupType">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutGameUserId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditText.Colored">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editTextGameUserId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enter_id_for_game"
+                        android:textColor="@color/white" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutGameUserPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditText.Colored">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editTextGameUserPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enter_password_for_game"
+                        android:textColor="@color/white" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/createButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="@string/create_game" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "528531683603",
+    "firebase_url": "https://socitymanagements.firebaseio.com",
+    "project_id": "socitymanagements",
+    "storage_bucket": "socitymanagements.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528531683603:android:96f8279bc7beb6116a82e6",
+        "android_client_info": {
+          "package_name": "com.SocietyManagements"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "528531683603-9jrgb751nrsu47r0b4fcu2385q343j37.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.SocietyManagements",
+            "certificate_hash": "65b2fe3675aa8fbcd2379523dacddda81907f685"
+          }
+        },
+        {
+          "client_id": "528531683603-pcrpm4obpqsrkrod2l44qbq1it3jhlgu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4Gb1V99zITHhQHDrj1gOvERqiwiYRkvo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "528531683603-pcrpm4obpqsrkrod2l44qbq1it3jhlgu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
