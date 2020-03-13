@@ -265,6 +265,7 @@ public class RegistrationActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if (task.isSuccessful()) {
+                    mAuth.sendPasswordResetEmail(email);
                     Toast.makeText(RegistrationActivity.this, "User Created ", Toast.LENGTH_SHORT).show();
                 } else {
                     Log.e("Error in saving Data ",task.getException().getMessage());
